@@ -7,6 +7,7 @@
     "start": "node index.js",
     "dev:chrome": "node --inspect index.js",
     "dev": "nodemon index.js",
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ui": "rm -rf build && cd ../fullstackopen1-2/part2/phonebook && npm run build && cp -r build ../../../fullstackopenPart3",
     "buildAndDev": "npm run build:ui && npm run dev"
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/Sheceido/fullstackopenPart3#readme",
   "devDependencies": {
+    "eslint": "^8.26.0",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.20"
   },
